@@ -263,14 +263,14 @@ h1 {
     grid-template-columns: 267px 267px 267px 267px 267px 267px;
     grid-template-rows: 286px 286px 286px 286px 286px;
     grid-template-areas: 
-        "1 1 1 1 2 2"
-        "1 1 1 1 3 3"
-        "4 4 4 5 5 5"
-        "4 4 4 5 5 5"
-        "6 6 7 7 8 8";
+        "item-1 item-1 item-1 item-1 item-2 item-2"
+        "item-1 item-1 item-1 item-1 item-3 item-3"
+        "item-4 item-4 item-4 item-5 item-5 item-5"
+        "item-4 item-4 item-4 item-5 item-5 item-5"
+        "item-6 item-6 item-7 item-7 item-8 item-8";
 }
 
-.curated-item-1, .curated-item-2, .curated-item-3 {
+.curated-item {
     background-color: #fff;
     border-radius: 28px;
     overflow: hidden;
@@ -278,15 +278,35 @@ h1 {
 }
 
 .curated-item-1 {
-    grid-area: 1 4 5;
+    grid-area: item-1;
 }
 
 .curated-item-2 {
-    grid-area: 2 6 7 8;
+    grid-area: item-2;
 }
 
 .curated-item-3 {
-    grid-area: 3;
+    grid-area: item-3;
+}
+
+.curated-item-4 {
+    grid-area: item-4;
+}
+
+.curated-item-5 {
+    grid-area: item-5;
+}
+
+.curated-item-6 {
+    grid-area: item-6;
+}
+
+.curated-item-7 {
+    grid-area: item-7;
+}
+
+.curated-item-8 {
+    grid-area: item-8;
 }
 
 .curated-grid img {
@@ -479,20 +499,21 @@ h1 {
     font-weight: 400;
 }
 
-.social-icon-1 {
+.social-icons {
     display: inline;
-    position: absolute;
     flex-direction: row;
+}
+
+.social-icon-1 {
     right: 20px;
     margin-top: -75px;
+    position: absolute;
 }
 
 .social-icon-2 {
-    display: inline;
-    position: absolute;
-    flex-direction: row;
     right: 20px;
     margin-top: -55px;
+    position: absolute;
 }
 
 .footer-links a {
