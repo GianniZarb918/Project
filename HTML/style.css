@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: sans-serif;
+    font-family: "Inter", sans-serif;
     background-color: rgba(255, 255, 255, 1);
 }
 
@@ -11,6 +11,7 @@ body {
     display: flex;
     align-items: center;
     height: 64px;
+    font-family: "Inter", sans-serif;
 }
 
 .navbar {
@@ -30,6 +31,7 @@ body {
 
 .nav-list li a {
     text-decoration: none;
+    font-family: "inter" sans-serif;
     color: rgba(16, 24, 40, 1);
     font-size: 14px;
     font-weight: 500;
@@ -102,6 +104,7 @@ h1 {
     height: 96px;
     align-items: center;
     top: 168px;
+    font-family: "Inter", sans-serif;
 }
 
 .shop-now-button {
@@ -118,6 +121,7 @@ h1 {
     height: 39px;
     gap: 10px;
     place-content: center;
+    font-family: "Inter", sans-serif;
 }
 
 .shop-now-button:hover {
@@ -130,6 +134,7 @@ h1 {
     padding: 50px 20px;
     text-align: left;
     margin-top: -240px;
+    font-family: "Inter", sans-serif;
 }
 
 .arrow-buttons {
@@ -200,7 +205,7 @@ h1 {
     width: 328px;
 }
 
-.offer-grid img {
+.background-image {
     object-fit: cover;
     border-radius: 28px;
     position: absolute;
@@ -213,12 +218,10 @@ h1 {
     font-size: 16px;
     color: rgba(255, 255, 255, 1);
     position: absolute;
-    left: 30px;
-    top: 30px;
+    padding: 32px;
 }
 
 .offer-grid button {
-    padding: 8px, 20px, 8px, 20px;
     background-color: transparent;
     color: white;
     border: 1px solid;
@@ -230,6 +233,12 @@ h1 {
     bottom: 30px;
     width: 125px;
     height: 35px;
+}
+
+.special-offer-like {
+    position: absolute;
+    bottom: 8px;
+    left: 140px;
 }
 
 /*Curated Items Section*/
@@ -272,7 +281,7 @@ h1 {
 
 .curated-item {
     background-color: #fff;
-    border-radius: 28px;
+    border-radius: 20px;
     overflow: hidden;
     position: relative;
 }
@@ -326,11 +335,15 @@ h1 {
 
 .curated-grid p {
     margin: 10px 0;
-    font-size: 24px;
+    font-size: 20px;
     color: rgba(255, 255, 255, 1);
     position: absolute;
-    left: 20px;
-    bottom: 10px;
+    left: 24px;
+    bottom: 20px;
+}
+
+.curated-grid b {
+    font-size: 24px;
 }
 
 /*Shop Now Section*/
@@ -451,6 +464,11 @@ h1 {
     padding-bottom: 20px;
 }
 
+.subscribe-form {
+    display: flex;
+    place-content: center;
+}
+
 .email-input {
     border: none;
     width: 330px;
@@ -458,10 +476,11 @@ h1 {
     border-radius: 4px 0px 0px 4px;
     font-weight: 400;
     font-size: 14px;
+    background-color: rgba(249, 250, 251, 1);
 }
 
-::placeholder{
-    color: rgba(123, 170, 155, 1);
+.subscribe-section ::placeholder {
+    color: rgba(123, 170, 155, 1)
 }
 
 .subscribe-section button {
