@@ -184,7 +184,7 @@ h1 {
     size: 10px;
 }
 
-.offer-item-1, .offer-item-2, .offer-item-3, .offer-item-4 {
+.offer-item {
     border: 1px solid #ddd;
     border-radius: 28px;
     height: 500px;
@@ -448,9 +448,9 @@ h1 {
 }
 
 .product-card-buttons {
-    position: relative;
+    position: absolute;
     top: 12px;
-    left: 356px;
+    right: 12px;
 }
 
 .product-card button {
@@ -490,6 +490,7 @@ h1 {
     font-weight: 400;
     font-size: 14px;
     background-color: rgba(249, 250, 251, 1);
+    padding-block: 0px;
 }
 
 .subscribe-section ::placeholder {
