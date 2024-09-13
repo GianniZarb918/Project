@@ -433,6 +433,22 @@ h1 {
     position: relative;
 }
 
+.product-card-1 {
+    grid-area: item-9;
+}
+
+.product-card-2 {
+    grid-area: item-10;
+}
+
+.product-card-3 {
+    grid-area: item-11;
+}
+
+.product-card-4 {
+    grid-area: item-12;
+}
+
 .product-card {
     border: 1px solid #ddd;
     border-radius: 28px;
@@ -575,4 +591,46 @@ h1 {
 
 .powered-by {
 place-content: flex-end;
+}
+
+/*Mobile*/
+@media only screen and (max-width: 640px) {
+  .curated-grid {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 60px 60px 60px 60px 60px 60px 60px 60px 60px;
+    grid-template-areas: 
+        "item-1 item-2"
+        "item-1 item-2"
+        "item-1 item-3"
+        "item-1 item-3"
+        "item-4 item-5"
+        "item-4 item-5"
+        "item-4 item-5"
+        "item-7 item-8"
+        "item-7 item-8";
+  }
+
+  .product-grid {
+    grid-template-columns: 50% 50%;
+    grid-template: 120px 120px;
+    grid-template-areas: 
+    "item-9 item-10"
+    "item-11 item-12";
+  }
+}
+
+/*Tablet*/
+@media only screen and (max-width: 800px) {
+    .curated-grid {
+     grid-template-columns: 25% 25% 25% 25%;
+     grid-template-rows: 150px 150px 150px 150px 150px;
+     grid-template-areas:
+        "item-1 item-1 item-2 item-2"
+        "item-1 item-1 item-3 item-3"
+        "item-4 item-4 item-5 item-5"
+        "item-4 item-4 item-5 item-5"
+        "item-6 item-6 item-7 item-7";
+    }
+
+    .product-grid {}
 }
