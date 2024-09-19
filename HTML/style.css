@@ -287,7 +287,6 @@ h1 {
 
 .curated-grid {
     position: relative;
-    overflow: hidden;
     justify-content: center;
     border-radius: 10px;
     gap: 10px;
@@ -431,22 +430,6 @@ h1 {
     justify-content: center;
     gap: 16px;
     position: relative;
-}
-
-.product-card-1 {
-    grid-area: item-9;
-}
-
-.product-card-2 {
-    grid-area: item-10;
-}
-
-.product-card-3 {
-    grid-area: item-11;
-}
-
-.product-card-4 {
-    grid-area: item-12;
 }
 
 .product-card {
@@ -609,14 +592,6 @@ place-content: flex-end;
         "item-7 item-8"
         "item-7 item-8";
   }
-
-  .product-grid {
-    grid-template-columns: 50% 50%;
-    grid-template: 120px 120px;
-    grid-template-areas: 
-    "item-9 item-10"
-    "item-11 item-12";
-  }
 }
 
 /*Tablet*/
@@ -630,7 +605,6 @@ place-content: flex-end;
         "item-4 item-4 item-5 item-5"
         "item-4 item-4 item-5 item-5"
         "item-6 item-6 item-7 item-7";
+    padding: 20px;
     }
-
-    .product-grid {}
 }
