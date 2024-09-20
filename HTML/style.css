@@ -287,8 +287,6 @@ h1 {
 
 .curated-grid {
     position: relative;
-    justify-content: center;
-    border-radius: 10px;
     gap: 10px;
     display: grid;
     grid-template-columns: 16% 16% 16% 16% 16% 16%;
@@ -435,7 +433,7 @@ h1 {
 .product-card {
     border: 1px solid #ddd;
     border-radius: 28px;
-    width: 450px;
+    width: 25%;
     height: 450px;
     text-align: left;
     background-color: #fff;
@@ -576,11 +574,39 @@ h1 {
 place-content: flex-end;
 }
 
+/*Tablet*/
+@media only screen and (max-width: 800px) {
+    .curated-grid {
+     grid-template-columns: 25% 25% 25% 25%;
+     grid-template-rows: 150px 150px 150px 150px 150px 150px 150px;
+     grid-template-areas:
+        "item-1 item-1 item-2 item-2"
+        "item-1 item-1 item-3 item-3"
+        "item-4 item-4 item-5 item-5"
+        "item-4 item-4 item-5 item-5"
+        "item-6 item-6 item-7 item-7"
+        "item-8 item-8 item-8 item-8"
+        "item-8 item-8 item-8 item-8";
+     place-content: center;
+     padding: 0 10px;
+    }
+
+    .product-grid {
+     flex-wrap: wrap;
+     gap: 10px;
+     row-gap: 60px;
+    }
+
+    .product-card {
+     width: 49%;
+    }
+}
+
 /*Mobile*/
 @media only screen and (max-width: 640px) {
   .curated-grid {
     grid-template-columns: 50% 50%;
-    grid-template-rows: 60px 60px 60px 60px 60px 60px 60px 60px 60px;
+    grid-template-rows: 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px;
     grid-template-areas: 
         "item-1 item-2"
         "item-1 item-2"
@@ -589,22 +615,22 @@ place-content: flex-end;
         "item-4 item-5"
         "item-4 item-5"
         "item-4 item-5"
-        "item-7 item-8"
-        "item-7 item-8";
+        "item-6 item-7"
+        "item-6 item-7"
+        "item-8 item-8"
+        "item-8 item-8"
+        "item-8 item-8";
+    place-content: center;
+    padding: 0 8px;
   }
-}
 
-/*Tablet*/
-@media only screen and (max-width: 800px) {
-    .curated-grid {
-     grid-template-columns: 25% 25% 25% 25%;
-     grid-template-rows: 150px 150px 150px 150px 150px;
-     grid-template-areas:
-        "item-1 item-1 item-2 item-2"
-        "item-1 item-1 item-3 item-3"
-        "item-4 item-4 item-5 item-5"
-        "item-4 item-4 item-5 item-5"
-        "item-6 item-6 item-7 item-7";
-    padding: 20px;
+   .product-grid {
+     flex-wrap: wrap;
+     gap: 10px;
+     row-gap: 60px;
+    }
+
+    .product-card {
+     width: 48%;
     }
 }
