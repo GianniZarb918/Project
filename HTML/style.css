@@ -371,6 +371,7 @@ h1 {
 .shop-now-items {
     margin: 0 auto;
     padding: 50px 20px;
+    gap: 10px;
 }
 
 .shop-now-header {
@@ -388,7 +389,7 @@ h1 {
     color: rgba(0, 0, 0, 1);
     margin-bottom: 20px;
     place-content: center;
-    padding-top: -80px;
+    padding-top: 60px;
 }
 
 .tabs {
@@ -424,15 +425,35 @@ h1 {
 }
 
 .product-grid {
-    display: flex;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 302px;
+    grid-template-areas: 
+        "item-9 item-10 item-11 item-12";
     justify-content: center;
     gap: 16px;
     position: relative;
+    margin: 0 20px;
+}
+
+.product-item-1 {
+    grid-area: item-9;
+}
+
+.product-item-2 {
+    grid-area: item-10;
+}
+
+.product-item-3 {
+    grid-area: item-11;
+}
+
+.product-item-4 {
+    grid-area: item-12;
 }
 
 .product-card {
     border-radius: 28px;
-    width: 25%;
     text-align: left;
     background-color: #fff;
     position: relative;
@@ -584,16 +605,15 @@ place-content: flex-end;
         "item-8 item-8 item-8 item-8";
      place-content: center;
      padding: 0 10px;
+
     }
 
     .product-grid {
-     flex-wrap: wrap;
-     gap: 10px;
-     row-gap: 60px;
-    }
-
-    .product-card {
-     width: 50%;
+     grid-template-columns: 50% 50%;
+     grid-template-rows: 350px 302px;
+     grid-template-areas: 
+        "item-9 item-10"
+        "item-11 item-12";
     }
 }
 
@@ -620,12 +640,10 @@ place-content: flex-end;
   }
 
    .product-grid {
-     flex-wrap: wrap;
-     gap: 10px;
-     row-gap: 60px;
-    }
-
-    .product-card {
-     width: 50%;
+     grid-template-columns: 50% 50%;
+     grid-template-rows: 350px 302px;
+     grid-template-areas: 
+        "item-9 item-10"
+        "item-11 item-12";
     }
 }
