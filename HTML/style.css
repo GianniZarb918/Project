@@ -388,7 +388,7 @@ h1 {
     color: rgba(0, 0, 0, 1);
     margin-bottom: 20px;
     place-content: center;
-    padding-top: 65px;
+    padding-top: -80px;
 }
 
 .tabs {
@@ -433,7 +433,6 @@ h1 {
 .product-card {
     border-radius: 28px;
     width: 25%;
-    height: 450px;
     text-align: left;
     background-color: #fff;
     position: relative;
@@ -443,8 +442,7 @@ h1 {
     object-fit: cover;
     border-radius: 28px;
     width: 100%;
-    height: 100%;
-    position: absolute;
+    height: 302px;
 }
 
 .product-card p {
