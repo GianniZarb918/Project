@@ -1,3 +1,5 @@
+/*index*/
+
 body {
     margin: 0;
     font-family: "Inter", sans-serif;
@@ -51,6 +53,10 @@ body {
     gap: 16px;
 }
 
+.nav-list li a:hover {
+    text-decoration: underline;
+}
+
 .right-section {
     display: flex;
     align-items: center;
@@ -85,6 +91,18 @@ body {
     cursor: pointer;
 }
 
+#liked:hover {
+    background-image: url('/images/liked-hover.png');
+}
+
+#cart:hover {
+    background-image: url('/images/cart-hover.png');
+}
+
+#profile:hover {
+    background-image: url('/images/profile-hover.png');
+}
+
 /*Logo Section*/
 
 .header-container {
@@ -106,7 +124,7 @@ body {
     left: 541px;
 }
 
-h1 {
+.header-container h1 {
     font-size: 40px;
     margin-bottom: 20px;
     color: rgba(0, 29, 20, 1);
@@ -137,7 +155,7 @@ h1 {
 }
 
 .shop-now-button:hover {
-    background-color: #4caf50;
+    background-color: rgba(69, 130, 11, 1);
 }
 
 /*Special Offers Section*/
@@ -646,4 +664,181 @@ place-content: flex-end;
         "item-9 item-10"
         "item-11 item-12";
     }
+}
+
+/*Product View*/
+
+.product-container {
+    padding: 50px 20px;
+    display: grid;
+    gap: 10px;
+    left: 47px;
+    top: 140px;
+    padding-bottom: 150px;
+}
+
+.item-grid {
+    position: relative;
+    display: grid;
+    max-width: 484px;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 500px 112px;
+    grid-template-areas: 
+    "item-1 item-1 item-1 item-1"
+    "item-2 item-3 item-4 item-5";
+    gap: 13px;
+}
+
+.product-image {
+    background-color: #333;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+}
+
+.product-image img {
+    object-fit: contain;
+    border-radius: 28px;
+    position: absolute;
+}
+
+.product-image-big img {
+    width: 382px;
+    height: 213px;
+    left: 80px;
+    top: 140px;
+}
+
+.product-image-small img {
+    width: 78.04px;
+    height: 43.46px;
+    left: 25px;
+    top: 30px;
+}
+
+.product-image-big {
+    grid-area: item-1;
+}
+
+.product-image-small-1 {
+    grid-area: item-2;
+}
+
+.product-image-small-2 {
+    grid-area: item-3;
+}
+
+.product-image-small-3 {
+    grid-area: item-4;
+}
+
+.product-image-small-4 {
+    grid-area: item-5;
+}
+
+.product-choose {
+    position: absolute;
+    top: 100px;
+    margin-bottom: 44px;
+}
+
+.product-details {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    left: 800px;
+}
+
+.product-name h1 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: -20px;
+    color: rgba(0, 29, 20, 1);
+}
+
+.product-name h2 {
+    font-size: 32px;
+    color: rgba(69, 130, 11, 1);
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.product-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: rgba(102, 112, 133, 1);
+    font-weight: 400;
+    line-height: 22.4px;
+}
+
+.product-options {
+    margin-top: 20px;
+}
+
+.product-options label {
+    font-size: 16px;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 5px;
+    color: rgba(102, 112, 133, 1);
+    margin-bottom: 16px;
+}
+
+.color-options input {
+    width: 24px;
+    height: 24px;
+    gap: 10px;
+    margin-bottom: 44px;
+}
+
+.size-options button {
+    width: 80px;
+    height: 48px;
+    border-radius: 4px;
+    gap: 10px;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border: 1px solid rgba(229, 231, 235, 1);
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(16, 24, 39, 1);
+    margin-bottom: 44px;
+}
+
+.quantity-option input {
+    width: 204px;
+    height: 48px;
+    opacity: 0px;
+    border: 1px solid rgba(208, 213, 221, 1);
+    border-radius: 4px;
+    margin-bottom: 44px;
+}
+
+.add-like {
+    display: flex;
+    gap: 8px;
+}
+
+.add-item {
+    width: 360px;
+    height: 56px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: rgba(87, 155, 32, 1);
+    color: rgba(255, 255, 255, 1);
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+}
+
+.like-button-product {
+    width: 56px;
+    height: 56px;
+    border-radius: 10px;
+    background-color: rgba(243, 255, 240, 1);
+    border: none;
 }
