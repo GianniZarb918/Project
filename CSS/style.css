@@ -690,7 +690,7 @@ place-content: flex-end;
 }
 
 .product-image {
-    background-color: #333;
+    background-color: rgba(249, 250, 251, 1);
     border-radius: 12px;
     overflow: hidden;
     position: relative;
@@ -714,6 +714,14 @@ place-content: flex-end;
     height: 43.46px;
     left: 25px;
     top: 30px;
+}
+
+.product-image-small {
+    border: 1px solid transparent;
+}
+
+.product-image-small:hover {
+    border: 1px solid rgba(69, 130, 11, 1);
 }
 
 .product-image-big {
@@ -784,11 +792,21 @@ place-content: flex-end;
     margin-bottom: 16px;
 }
 
+.color-options {
+    display: inline-flex;
+    gap: 16px;
+    place-items: center;
+}
+
 .color-options input {
-    width: 24px;
     height: 24px;
-    gap: 10px;
-    margin-bottom: 44px;
+    width: 24px;
+    margin: 0 0 44px 0;
+}
+
+.color-options input:checked {
+    height: 36px;
+    width: 36px;
 }
 
 .size-options button {
@@ -805,6 +823,10 @@ place-content: flex-end;
     font-weight: 500;
     color: rgba(16, 24, 39, 1);
     margin-bottom: 44px;
+}
+
+.size-options button:hover {
+    background-color: rgba(69, 130, 11, 1);
 }
 
 .quantity-option input {
@@ -833,6 +855,10 @@ place-content: flex-end;
     font-size: 16px;
     font-weight: 600;
     justify-content: center;
+}
+
+.add-item:hover {
+    background-color:  rgba(69, 130, 11, 1);
 }
 
 .like-button-product {
