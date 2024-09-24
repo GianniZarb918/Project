@@ -93,10 +93,12 @@ body {
 
 #liked:hover {
     background-image: url('/images/liked-hover.png');
+    transition: 5s;
 }
 
 #cart:hover {
     background-image: url('/images/cart-hover.png');
+    transition: 5s;
 }
 
 #profile:hover {
@@ -668,6 +670,15 @@ place-content: flex-end;
 
 /*Product View*/
 
+.product-view {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "item-1 item-2";
+}
+
 .product-container {
     padding: 50px 20px;
     display: grid;
@@ -675,6 +686,7 @@ place-content: flex-end;
     left: 47px;
     top: 140px;
     padding-bottom: 150px;
+    grid-area: item-1;
 }
 
 .item-grid {
@@ -744,17 +756,17 @@ place-content: flex-end;
     grid-area: item-5;
 }
 
-.product-choose {
-    position: absolute;
-    top: 100px;
-    margin-bottom: 44px;
-}
 
 .product-details {
     position: relative;
     display: flex;
     flex-direction: column;
-    left: 800px;
+}
+
+.product-choose {
+    grid-area: item-2;
+    max-width: 550px;
+    padding-top: 50px;
 }
 
 .product-name h1 {
@@ -762,6 +774,7 @@ place-content: flex-end;
     font-weight: 600;
     margin-bottom: -20px;
     color: rgba(0, 29, 20, 1);
+    width: 167px;
 }
 
 .product-name h2 {
@@ -827,6 +840,7 @@ place-content: flex-end;
 
 .size-options button:hover {
     background-color: rgba(69, 130, 11, 1);
+    color: rgba(255, 255, 255, 1);
 }
 
 .quantity-option input {
