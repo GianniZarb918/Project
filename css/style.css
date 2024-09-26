@@ -671,16 +671,22 @@ place-content: flex-end;
 /*Product View*/
 
 .product-view {
-    display: grid;
-    justify-content: space-between;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: auto;
-    grid-template-areas: 
-        "item-1 item-2";
+
+}
+
+.product-view .col{
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+}
+
+.row{
+    padding: 50px 20px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .product-container {
-    padding: 50px 20px;
     display: grid;
     gap: 10px;
     left: 47px;
