@@ -882,3 +882,242 @@ place-content: flex-end;
     background-color: rgba(243, 255, 240, 1);
     border: none;
 }
+
+/*Listings*/
+
+.listings-header {
+    padding: 10px 25px;
+    color: rgba(0, 29, 20, 1);
+    gap: 32px;
+    margin-bottom: 50px;
+}
+
+.listings-header h1 {
+    font-size: 43.5px;
+    font-weight: 600;
+    line-height: 52.64px;
+    text-align: center;
+}
+
+.listings-header h2 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.6px;
+    text-align: center;
+}
+
+.filter-options {
+    max-width: 240px;
+    padding: 10px 25px;
+}
+
+.filter-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    place-items: baseline;
+    color: rgba(52, 64, 84, 1);
+    margin-bottom: 20px;
+}
+
+.filter-title h3 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: left;
+}
+
+.filter-title img {
+    padding-left: 10px;
+}
+
+.filter-title h4 {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14.4px;
+    text-align: left;
+}
+
+.filters {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    place-items: center;
+    color: rgba(16, 24, 40, 1);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.8px;
+    text-align: left;
+}
+
+.listings-grid {
+    position: relative;
+    row-gap: 60px;
+    column-gap: 12px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 250px 250px 250px 250px;
+    grid-template-areas: 
+    "item-1 item-2 item-3 item-4"
+    "item-5 item-6 item-7 item-8"
+    "item-9 item-10 item-11 item-12"
+    "item-13 item-14 item-15 item-16";
+    max-width: 900px;
+}
+
+.listings-item-1 {
+    grid-area: item-1;
+}
+
+.listings-item-2 {
+    grid-area: item-2;
+}
+
+.listings-item-3 {
+    grid-area: item-3;
+}
+
+.listings-item-4 {
+    grid-area: item-4;
+}
+
+.listings-item-5 {
+    grid-area: item-5;
+}
+
+.listings-item-6 {
+    grid-area: item-6;
+}
+
+.listings-item-7 {
+    grid-area: item-7;
+}
+
+.listings-item-8 {
+    grid-area: item-8;
+}
+
+.listings-item-9 {
+    grid-area: item-9;
+}
+
+.listings-item-10 {
+    grid-area: item-10;
+}
+
+.listings-item-11 {
+    grid-area: item-11;
+}
+
+.listings-item-12 {
+    grid-area: item-12;
+}
+
+.listings-item-13 {
+    grid-area: item-13;
+}
+
+.listings-item-14 {
+    grid-area: item-14;
+}
+
+.listings-item-15 {
+    grid-area: item-15;
+}
+
+.listings-item-16 {
+    grid-area: item-16;
+}
+
+.listings-card {
+    background-color: aquamarine;
+    border-radius: 12px;
+    position: relative;
+    text-align: left;
+    border: 1px solid rgba(242, 244, 247, 1);
+}
+
+.listings-card-image {
+    object-fit: contain;
+    width: 160px;
+    height: fit-content;
+}
+
+.listings-card-buttons {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+}
+
+.listings-card button {
+    width: 31.18px;
+    height: 31.18px;
+    border-radius: 7.09px;
+    border: none;
+    background-color: rgba(255, 255, 255, 1);
+    display: block;
+    margin-bottom: 5.2px;
+}
+
+.listings-card-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    line-height: 16.8px;
+    font-size: 14px;
+}
+
+.listings-card-text h5 {
+    font-weight: 600;
+    text-align: left;
+    color: rgba(0, 29, 20, 1);
+}
+
+.listings-card-text h6 {
+    font-weight: 700;
+    color: rgba(69, 130, 11, 1);
+}
+
+.page-button {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    width: 308px;
+    margin-bottom: 60px;
+}
+
+.page-button button {
+    height: 36px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    border-radius: 4px;
+    border: 1px solid rgba(234, 236, 240, 1);
+    text-align: center;
+    color: rgba(29, 41, 57, 1);
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.pages-prev {
+    width: 74px;
+}
+
+.pages-1 {
+    width: 31px;
+}
+
+.pages-2 {
+    width: 33px;
+}
+
+.pages-more {
+    width: 31px;
+}
+
+.pages-4 {
+    width: 33px;
+}
+
+.pages-next {
+    width: 76px;
+}
