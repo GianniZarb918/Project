@@ -908,9 +908,15 @@ place-content: flex-end;
     text-align: center;
 }
 
+.listings-main-content {
+    display: flex;
+}
+
 .filter-options {
     max-width: 240px;
     padding: 10px 25px;
+    display: flex;
+    flex-direction: column;
 }
 
 .filter-title {
@@ -952,6 +958,11 @@ place-content: flex-end;
     text-align: left;
 }
 
+.main-listing {
+    display: flex;
+    position: relative;
+}
+
 .listings-grid {
     position: relative;
     row-gap: 60px;
@@ -959,76 +970,7 @@ place-content: flex-end;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 300px 300px 300px 300px;
-    grid-template-areas: 
-    "item-1 item-2 item-3 item-4"
-    "item-5 item-6 item-7 item-8"
-    "item-9 item-10 item-11 item-12"
-    "item-13 item-14 item-15 item-16";
     max-width: 900px;
-}
-
-.listings-item-1 {
-    grid-area: item-1;
-}
-
-.listings-item-2 {
-    grid-area: item-2;
-}
-
-.listings-item-3 {
-    grid-area: item-3;
-}
-
-.listings-item-4 {
-    grid-area: item-4;
-}
-
-.listings-item-5 {
-    grid-area: item-5;
-}
-
-.listings-item-6 {
-    grid-area: item-6;
-}
-
-.listings-item-7 {
-    grid-area: item-7;
-}
-
-.listings-item-8 {
-    grid-area: item-8;
-}
-
-.listings-item-9 {
-    grid-area: item-9;
-}
-
-.listings-item-10 {
-    grid-area: item-10;
-}
-
-.listings-item-11 {
-    grid-area: item-11;
-}
-
-.listings-item-12 {
-    grid-area: item-12;
-}
-
-.listings-item-13 {
-    grid-area: item-13;
-}
-
-.listings-item-14 {
-    grid-area: item-14;
-}
-
-.listings-item-15 {
-    grid-area: item-15;
-}
-
-.listings-item-16 {
-    grid-area: item-16;
 }
 
 .listings-container {
@@ -1036,13 +978,17 @@ place-content: flex-end;
     flex-direction: column;
 }
 
+.listings-item{
+    display: flex;
+    height: 215px;
+}
+
 .listings-card {
-    background-color: aquamarine;
+    background-color: rgba(255, 255, 255, 1);
     border-radius: 12px;
     position: relative;
     border: 1px solid rgba(242, 244, 247, 1);
     overflow: hidden;
-    height: 300px;
 }
 
 .listings-card-image {
@@ -1129,11 +1075,4 @@ place-content: flex-end;
 
 .pages-next {
     width: 76px;
-}
-
-
-.listings-item{
-    display: flex;
-    height: 200px;
-    background-color: red;;
 }
