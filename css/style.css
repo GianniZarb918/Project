@@ -1130,3 +1130,10 @@ place-content: flex-end;
 .pages-next {
     width: 76px;
 }
+
+
+.listings-item{
+    display: flex;
+    height: 200px;
+    background-color: red;;
+}
