@@ -1042,13 +1042,14 @@ place-content: flex-end;
     position: relative;
     border: 1px solid rgba(242, 244, 247, 1);
     overflow: hidden;
+    height: 300px;
 }
 
-.listings-card-image img {
+.listings-card-image {
+    display: flex;
     object-fit: cover;
-    position: absolute;
-    max-width: 215px;
-    max-height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 .listings-card-buttons {
