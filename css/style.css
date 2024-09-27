@@ -670,10 +670,6 @@ place-content: flex-end;
 
 /*Product View*/
 
-.product-view {
-
-}
-
 .product-view .col{
     flex-basis: 0;
     flex-grow: 1;
@@ -852,10 +848,10 @@ place-content: flex-end;
 .quantity-option input {
     width: 204px;
     height: 48px;
-    opacity: 0px;
     border: 1px solid rgba(208, 213, 221, 1);
     border-radius: 4px;
     margin-bottom: 44px;
+    padding-left: 10px;
 }
 
 .add-like {
@@ -962,7 +958,7 @@ place-content: flex-end;
     column-gap: 12px;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 250px 250px 250px 250px;
+    grid-template-rows: 300px 300px 300px 300px;
     grid-template-areas: 
     "item-1 item-2 item-3 item-4"
     "item-5 item-6 item-7 item-8"
@@ -1035,18 +1031,24 @@ place-content: flex-end;
     grid-area: item-16;
 }
 
+.listings-container {
+    display: flex;
+    flex-direction: column;
+}
+
 .listings-card {
     background-color: aquamarine;
     border-radius: 12px;
     position: relative;
-    text-align: left;
     border: 1px solid rgba(242, 244, 247, 1);
+    overflow: hidden;
 }
 
-.listings-card-image {
-    object-fit: contain;
-    width: 160px;
-    height: fit-content;
+.listings-card-image img {
+    object-fit: cover;
+    position: absolute;
+    max-width: 215px;
+    max-height: 100%;
 }
 
 .listings-card-buttons {
