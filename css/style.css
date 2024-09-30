@@ -910,11 +910,13 @@ place-content: flex-end;
 
 .listings-main-content {
     display: flex;
+    flex-direction: row;
+    column-gap: 60px;
 }
 
 .filter-options {
-    max-width: 240px;
-    padding: 10px 25px;
+    width: 240px;
+    padding: 10px 0px;
     display: flex;
     flex-direction: column;
 }
@@ -961,11 +963,13 @@ place-content: flex-end;
 .main-listing {
     display: flex;
     position: relative;
+    padding: 25px 10px;
+    flex-direction: column;
+    flex-basis: 1000px;
 }
 
 .listings-grid {
     position: relative;
-    row-gap: 60px;
     column-gap: 12px;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
@@ -1039,6 +1043,8 @@ place-content: flex-end;
     gap: 6px;
     width: 308px;
     margin-bottom: 60px;
+    place-self: flex-end;
+    padding: 0px 25px;
 }
 
 .page-button button {
