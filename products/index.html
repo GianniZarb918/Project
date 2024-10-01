@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8"/>
     <link href="/css/style.css" rel="stylesheet">
+    <script src="/products/main.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,19 +39,19 @@
             <div class="product-container col">
                 <div class="item-grid">
                     <div class="product-image product-image-big">
-                        <img src="/images/asparagus.png" alt="Asparagus-1">
+                        <img id="mainImage" src="/images/asparagus.png" alt="Asparagus-1">
                     </div>
-                    <div class="product-image product-image-small-1 product-image-small">
-                        <img src="/images/asparagus.png" alt="Asparagus-2">
+                    <div class="product-image-small-1">
+                        <button class="product-button" onclick="changeImage(1)"><img src="/images/asparagus.png" alt="Asparagus-2"></button>
                     </div>
-                    <div class="product-image product-image-small-2 product-image-small">
-                        <img src="/images/asparagus-1.png" alt="Asparagus-3">
+                    <div class="product-image-small-2">
+                        <button class="product-button" onclick="changeImage(2)"><img src="/images/asparagus-1.png" alt="Asparagus-3"></button>
                     </div>
-                    <div class="product-image product-image-small-3 product-image-small">
-                        <img src="/images/asparagus-2.png" alt="Asparagus-4">
+                    <div class="product-image-small-3">
+                        <button class="product-button" onclick="changeImage(3)"><img src="/images/asparagus-2.png" alt="Asparagus-4"></button>
                     </div>
-                    <div class="product-image product-image-small-4 product-image-small">
-                        <img src="/images/asparagus-2.png" alt="Asparagus-5">
+                    <div class="product-image-small-4">
+                        <button class="product-button" onclick="changeImage(4)"><img src="/images/asparagus-2.png" alt="Asparagus-5"></button>
                     </div>
                 </div>
             </div>

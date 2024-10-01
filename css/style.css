@@ -723,18 +723,20 @@ place-content: flex-end;
     top: 140px;
 }
 
-.product-image-small img {
-    width: 78.04px;
-    height: 43.46px;
-    left: 25px;
-    top: 30px;
-}
-
-.product-image-small {
+.product-button {
+    width: 112px;
+    height: 112px;
     border: 1px solid transparent;
+    background-color:  rgba(249, 250, 251, 1);
+    border-radius: 12px;
 }
 
-.product-image-small:hover {
+.product-button img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.product-button:hover {
     border: 1px solid rgba(69, 130, 11, 1);
 }
 
